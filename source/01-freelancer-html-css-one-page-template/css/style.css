@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+:root {
+    --primary-color: #F6B819;
+    --text-color: #011D20;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.flex {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 115px;
+}
+
+.col {
+    flex: 1;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.name-container {
+    font-size: 96px;
+    font-weight: 900;
+    color: var(--text-color);
+    line-height: 86%;
+    margin-top: 16px;
+}
+
+.name-highlight {
+    color: var(--primary-color);
+}
+
+.text {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 28px 115px;
+}
+
+.links {
+    list-style: none;
+}
+
+.links-mobile {
+    display: none;
+}
+
+.link-item {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.link {
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    
+    .col {
+        flex: 1;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    .name-container {
+        font-size: 4rem;
+        margin-top: 16px;
+    }
+    
+    .text {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+    
+    .footer {
+        display: none;
+    }
+
+    .links-mobile {
+        display: block;
+        margin-top: 36px;
+        font-size: 1rem;
+    }
+    
+    .link-item {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    
+    .hero-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        transform: scale(1.4);
+    }
+}
