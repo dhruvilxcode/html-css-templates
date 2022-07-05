@@ -7,6 +7,11 @@
 Preview
 ![01-freelancer-html-css-one-page-template](./source/01-freelancer-html-css-one-page-template/preview.png)
 
+## Template 2
+
+[View Source](./source/02-login-template/)
+
+
 -------
 
 

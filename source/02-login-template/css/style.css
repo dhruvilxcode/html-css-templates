@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+:root {
+    --primary: #34239D;
+    --input-bg: #F4F4F4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.flex {
+    display: flex;
+    
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.col {
+    flex: 1;
+    flex-direction: row;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.p-80 {
+    padding: 80px 80px;
+}
+
+.form {
+    margin-top: 96px;
+}
+
+.input-section {
+    margin-top: 30px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    
+    background-color: var(--input-bg);
+    border-radius: 18px;
+    padding: 20px 18px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px 18px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    font-size: 1em;
+}
+
+.space-between {
+    justify-content: space-between !important;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+}
